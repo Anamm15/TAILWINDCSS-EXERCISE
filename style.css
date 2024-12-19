@@ -1,6 +1,37 @@
 body {
     height: 3000px;
     scroll-behavior: smooth;
-    overflow: auto;
+    overflow-y: auto;
     font-family: 'Nunito';
+    overflow-x: hidden;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1d4ed8; /* Warna biru */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+
+footer {
+    margin-top: 15rem !important;
 }

@@ -18,3 +18,24 @@ hamburgerMenu.addEventListener('click', () => {
         }, 300);
     }
 });
+
+const menuLinks = document.querySelectorAll("ul li a");
+
+const currentUrl = window.location.pathname;
+
+menuLinks.forEach((link) => {
+    if (link.getAttribute("href") === currentUrl) {
+        link.classList.add("text-blue-800", "active");
+    }
+});
+
+
+// SWIPER
+const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
+    slidesPerView: 'auto',
+    watchOverflow: true,
+    spaceBetween: 16,
+    breakpoints: {
+        1024: { enabled: false, },
+    },
+});
