@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- FONT NUNITO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link href="./output.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="fixed z-50 w-screen top-0 left-0 bg-white">
+        <div class="flex justify-between items-center px-6 py-4 lg:h-24">
+            <!-- Logo -->
+            <a href="./index.html" id="mobile-logo" class="font-bold text-blue-600 lg:hidden text-lg sm:text-xl">Kawan Karir</a>
+    
+            <!-- Hamburger Menu Icon -->
+            <button id="hamburger-menu" class="lg:hidden block text-blue-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+    
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex xl:gap-x-8 lg:gap-x-4 items-center">
+                <a href="./index.html" class="font-bold text-base lg:text-lg xl:text-xl 2xl:text-2xl">Kawan Karir</a>
+                <li><a href="./index.html" class="text-sm lg:text-base xl:text-lg 2xl:text-xl">Beranda</a></li>
+                <li><a href="./lowongan.html" class="text-sm lg:text-base xl:text-lg 2xl:text-xl">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class="text-sm lg:text-base xl:text-lg 2xl:text-xl">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class="text-sm lg:text-base xl:text-lg 2xl:text-xl">Artikel Karir</a></li>
+                <li><a href="./premium.html" class="text-sm lg:text-base xl:text-lg 2xl:text-xl">Premium</a></li>
+            </ul>
+    
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex gap-4 items-center me-4">
+                <button class="text-sm lg:text-base xl:text-lg 2xl:text-xl"><a href="./register.html">Daftar</a></button>
+                <button class="text-sm lg:text-base xl:text-lg 2xl:text-xl"><a href="./login.html">Masuk</a></button>
+                <button class="bg-blue-600 text-white px-4 py-3 rounded-lg flex items-center gap-3 duration-300 hover:bg-blue-900 text-sm lg:text-base xl:text-lg 2xl:text-xl">
+                    <a href="./homepage-perusahaan.html">Buat Iklan Lowongan</a>
+                    <svg width="17" height="17" class="arrow__icon__navbar" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8.5L18.5 8.5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 15.5L19 8.5L12 1.5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-md h-max transition-all transform opacity-0 -translate-y-full duration-300 ease-in-out">
+            <ul class="flex flex-col items-start p-6 gap-y-4">
+                <li><a href="./index.html" class="text-base">Beranda</a></li>
+                <li><a href="./lowongan.html" class="text-base">Lowongan Kerja</a></li>
+                <li><a href="./perusahaan.html" class="text-base">Perusahaan</a></li>
+                <li><a href="./artikel-karir.html" class="text-base">Artikel Karir</a></li>
+                <li><a href="./premium.html" class="text-base">Premium</a></li>
+                <li class="w-full">
+                    <button class="w-full text-left text-base"><a href="./register.html">Daftar</a></button>
+                </li>
+                <li class="w-full">
+                    <button class="w-full text-left text-base"><a href="./login.html">Masuk</a></button>
+                </li>
+                <li class="w-full">
+                    <button class="w-max bg-blue-600 text-white px-4 py-2 rounded-lg text-center flex items-center gap-3 duration-300 hover:bg-blue-900 text-base">
+                        <a href="./homepage-perusahaan.html">Buat Iklan Lowongan</a>
+                        <svg width="17" height="17" class="arrow__icon__navbar" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 8.5L18.5 8.5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12 15.5L19 8.5L12 1.5" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+
+    <script src="./script.js"></script>
+</body>
+</html>
