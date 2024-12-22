@@ -31,6 +31,24 @@ body {
     width: 100%;
 }
 
+/* Navigation Swiper */
+#nav-btn {
+    color: gray;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    /* background-color: #1d4ed8; */
+}
+#nav-btn::after {
+    font-size: 50px;
+}
+#nav-btn:hover {
+    /* background-color: #0056b3; */
+}
+
+
 
 footer {
     margin-top: 15rem !important;

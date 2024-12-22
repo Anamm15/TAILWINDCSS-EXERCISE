@@ -39,3 +39,24 @@ const pekerjaanSwiper = new Swiper('.pekerjaan__carousel', {
         1024: { enabled: false, },
     },
 });
+
+const acaraSwiper = new Swiper('.acara__carousel', {
+    slidesPerView: 'auto',
+    watchOverflow: true,
+    spaceBetween: 16,
+    navigation: {
+        nextEl: null,
+        prevEl: null,
+    },
+})
+
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+
+nextButton.addEventListener('click', () => {
+    acaraSwiper.slideNext();
+});
+
+prevButton.addEventListener('click', () => {
+    acaraSwiper.slidePrev();
+});
